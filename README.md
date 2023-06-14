@@ -1,4 +1,4 @@
-Rewritten and configured to be compatible with Omeka-S 3.0+
+Rewritten and configured to be compatible with Omeka-S 4.0+
 
 # Simple Carousel (module for Omeka S)
 [Simple Carousel] is a module for [Omeka S]. This module provides carousel block form.
