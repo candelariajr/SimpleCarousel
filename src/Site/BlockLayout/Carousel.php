@@ -6,7 +6,7 @@ use Omeka\Api\Representation\SitePageRepresentation;
 use Omeka\Api\Representation\SitePageBlockRepresentation;
 use Omeka\Site\BlockLayout\AbstractBlockLayout;
 use Laminas\View\Renderer\PhpRenderer;
-use Laminas\Form\FormElementManager\FormElementManagerV3Polyfill;
+use Laminas\Form\FormElementManager;
 use SimpleCarousel\Form\CarouselBlockForm;
 
 class Carousel extends AbstractBlockLayout
@@ -25,7 +25,7 @@ class Carousel extends AbstractBlockLayout
      * @param FormElementManager $formElementManager
      * @param array $defaultSettings
      */
-    public function __construct(FormElementManagerV3Polyfill $formElementManager, array $defaultSettings)
+    public function __construct(FormElementManager $formElementManager, array $defaultSettings)
     {
         $this->formElementManager = $formElementManager;
         $this->defaultSettings = $defaultSettings;
